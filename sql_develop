@@ -1,9 +1,8 @@
 docker run -d \
-  --name oracle-xe \
-  -p 1521:1521 -p 5500:5500 \
-  -e ORACLE_PASSWORD=MyPassword123 \
-  --platform linux/amd64 \
-  gvenzl/oracle-xe
+  --name oracle-free-db \
+  -p 1521:1521 \
+  -e ORACLE_PWD=<your-password> \
+  container-registry.oracle.com/database/free:latest-lite
 
 
 
