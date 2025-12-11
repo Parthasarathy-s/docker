@@ -1,7 +1,6 @@
 brew services start postgresql@18
 
-
-
 brew services stop postgresql@18
 
+brew services list
 
