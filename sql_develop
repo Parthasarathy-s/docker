@@ -1,13 +1,7 @@
-docker run -d \
-  --name oracle-free-db \
-  -p 1521:1521 \
-  -e ORACLE_PWD=<your-password> \
-  container-registry.oracle.com/database/free:latest-lite
+brew services start postgresql@18
 
 
 
-Creates a container named oracle-xe
-Exposes:
-1521 → SQL Developer connection port
-5500 → EM Express (browser admin)
-Sets SYSTEM password = MyPassword123
+brew services stop postgresql@18
+
+
